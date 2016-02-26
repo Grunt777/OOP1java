@@ -65,7 +65,7 @@ public class LogAnalyzer
         int highestTwoHours = 0;
         int highestTwoHoursIndex = 0;
         
-        for (int i = 0; i < this.hourCounts.length; i += 2) {
+        for (int i = 0; i < this.hourCounts.length; i++) {
             int total = (this.hourCounts[i] + this.hourCounts[i + 1]);
             if (total > highestTwoHours) {
                 highestTwoHours = total;
